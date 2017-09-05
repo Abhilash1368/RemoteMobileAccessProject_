@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:orientation="vertical"
+    tools:context="main.com.project_p.ringtone">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#009688"
+        android:backgroundTint="#009688"
+        android:isScrollContainer="false"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#009688"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remote Mobile Access"
+                android:textColor="#ffffff"
+                android:textSize="23dp" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3801128517387888/9261575256"></com.google.android.gms.ads.AdView>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center|bottom"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3801128517387888/5025008857"></com.google.android.gms.ads.AdView>
+   </RelativeLayout>
+</LinearLayout>

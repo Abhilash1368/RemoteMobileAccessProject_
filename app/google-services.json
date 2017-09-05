@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "323333761654",
+    "firebase_url": "https://msg-project-785fd.firebaseio.com",
+    "project_id": "msg-project-785fd",
+    "storage_bucket": "msg-project-785fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323333761654:android:53d8d2e2a629216e",
+        "android_client_info": {
+          "package_name": "main.com.project_p"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323333761654-pmnua3b1jlgdebbli3je1mm0nqg2as6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAst5ygsOSLs5fAR_m9EOY-iR0aV0L3Z3E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

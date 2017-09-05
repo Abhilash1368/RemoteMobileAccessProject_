@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="main.com.project_p.Tab1">
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="main.com.project_p.Tab1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="69dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/msg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:text="Messages"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/message_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:textOff="OFF"
+                    android:textOn="ON"
+
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Get top 5 recent received messages by sending an sms to your number.\nSms format: messages-[pin]\nExample: messages-1234" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:layout_margin="5dip"
+                android:background="#009688" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="69dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/lo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="Location"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/location_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:textOff="OFF"
+                    android:textOn="ON" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Get your phone location remotely by sending an sms to your number.\nSms format: location-[pin]\nExample: location-1234" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:layout_margin="5dip"
+                android:background="#009688" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/activity_horizontal_margin"                android:padding="10dp"
+                android:showDividers="end">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="69dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/sil" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:text="Silent/Ring mode"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/silent_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.60"
+                    android:showText="true" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Set your phone to silent/Ringing mode remotely.\nSms format: silent-[pin] , ring-[pin]\nExample: silent-1234 , ring-1234" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:layout_margin="5dip"
+                android:background="#009688" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="69dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/cont" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:text="Contacts"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/contact_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:textOff="OFF"
+                    android:textOn="ON" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Get any of your phone contact numbers remotely by sending an sms to your phone.\nSms format: contact-[pin]-[name of contact]\nExample: contact-1234-alice" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:layout_margin="5dip"
+                android:background="#009688" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="69dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/log" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:text="Call logs"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/calllog_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:textOff="OFF"
+                    android:textOn="ON" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Get top 5 most recent calllogs remotely by sending an sms to your number.\nSms format: calllogs-[pin]\nExample: calllogs-1234" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:layout_margin="5dip"
+                android:background="#009688" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="69dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/cellring" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:text="Ring my Phone"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/ringmyphone_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.6"
+                    android:showText="true"
+                    android:textOff="OFF"
+                    android:textOn="ON" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Ring your phone remotely by sending an sms to your number.\nSms format: ringmyphone-[pin]\nExample: ringmyphone-1234" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:layout_margin="5dip"
+                android:background="#009688" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="69dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/hide" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Hide/Unhide application"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/hide_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.8"
+                    android:showText="true"
+                    android:textOff="OFF"
+                    android:textOn="ON" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Hide and unhide application remotely with a text message.\nSms format: hide-[pin] , unhide-[pin]\nExample: hide-1234 , unhide-1234" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:layout_margin="5dip"
+                android:background="#009688" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:text="Send an sms with help-[your_pin] to your phone to get all the above commands remotely.\nExample: help-1234" />
+
+            <com.google.android.gms.ads.NativeExpressAdView
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:paddingBottom="70dp"
+                android:paddingTop="20dp"
+                ads:adSize="300x150"
+                ads:adUnitId="@string/adUnitId"></com.google.android.gms.ads.NativeExpressAdView>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

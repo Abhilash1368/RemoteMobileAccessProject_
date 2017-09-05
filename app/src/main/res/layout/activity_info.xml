@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="main.com.project_p.Info">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#009688"
+        android:backgroundTint="#009688"
+        android:isScrollContainer="false"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#009688"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remote Mobile Access"
+                android:textColor="#ffffff"
+                android:textSize="23dp" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="STEP 1:"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Create a pin which should be included in your sms commands,this pin can be changed at any time from CREATE PIN tab."
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="     Example: [Your_pin]=1234\n                      "
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="STEP 2:"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Send any of sms commands mentioned in the mainscreen with your pin for desired result"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Example:Lets say you lost your phone(location turned on and mobile not switched off) and want to know the location of phone then send an sms to your phone number as shown in main screen,then your phone automatically reply's you the location of it."
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="SMS COMMAND:  location-[your_pin]"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="If you dont remember the commands,then send the following sms to your phone  to get all commands remotely."
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMS COMMAND:  help-[your_pin]"
+                android:textAlignment="center"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Privacy policy:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:onClick="privacy"
+                android:id="@+id/policy"
+                android:text="Click here to read privacy policy."/>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewss"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3801128517387888/5547569255"></com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>
